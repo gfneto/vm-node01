@@ -1,0 +1,11 @@
+version: 2
+ethernets:
+  ens3:
+    dhcp4: true
+    dhcp4-overrides:
+      use-routes: false
+      send-hostname: true
+    gateway4: 192.168.1.254  # Replace with your actual gateway IP
+    nameservers:
+      addresses:
+        - 192.168.1.254
